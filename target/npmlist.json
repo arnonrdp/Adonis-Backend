@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"backend","dependencies":{"@adonisjs/core":{"version":"5.7.5"},"@adonisjs/repl":{"version":"3.1.10"},"proxy-addr":{"version":"2.0.7"},"reflect-metadata":{"version":"0.1.13"},"source-map-support":{"version":"0.5.21"}}}
