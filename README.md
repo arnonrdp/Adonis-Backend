@@ -20,3 +20,15 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm run start
+```
+
+```bash
+# Create migrations and prepare for creating tables
+$ node ace make:migration posts
+
+# Create tables
+$ node ace migration:run
+
+# Drop tables
+$ node ace migration:rollback
+```
