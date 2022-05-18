@@ -21,7 +21,7 @@ npm run dev
 npm run build
 npm run start
 ```
-
+---
 ## Comandos Úteis
 
 ```bash
@@ -36,4 +36,11 @@ node ace migration:rollback
 
 # Create new migration: permite excluir uma única coluna da tabela
 node ace make:migration del_slug_column --table:posts
+
+# Create new model: cria uma nova classe
+node ace make:model Post
+
+# Exibe o status das migrations
+node ace migration:status
 ```
+![node ace migration:status](./assets/migration_status.png)
