@@ -37,8 +37,11 @@ node ace migration:rollback
 # Create new migration: permite excluir uma única coluna da tabela
 node ace make:migration del_slug_column --table:posts
 
-# Create new model: cria uma nova classe
+# Create new model: cria uma nova classe Model
 node ace make:model Post
+
+# Create new controller: cria uma nova classe Controller
+node ace make:controller Posts -r
 
 # Exibe o status das migrations
 node ace migration:status
