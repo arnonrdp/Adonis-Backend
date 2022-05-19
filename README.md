@@ -34,9 +34,6 @@ node ace migration:run
 # Drop tables: executa o comando DOWN da última migration executada
 node ace migration:rollback
 
-# Create new migration: permite excluir uma única coluna da tabela
-node ace make:migration del_slug_column --table:posts
-
 # Create new model: cria uma nova classe Model
 node ace make:model Post
 
@@ -47,3 +44,7 @@ node ace make:controller Posts -r
 node ace migration:status
 ```
 ![node ace migration:status](./assets/migration_status.png)
+```bash
+# Exibe a lista de rotas
+node ace list:routes
+```
