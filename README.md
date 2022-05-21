@@ -34,10 +34,10 @@ node ace migration:run
 # Drop tables: executa o comando DOWN da última migration executada
 node ace migration:rollback
 
-# Create new model: cria uma nova classe Model
+# Cria um novo Model: cria uma nova classe Model
 node ace make:model Post
 
-# Create new controller: cria uma nova classe Controller
+# Cria um novo Controller: cria uma nova classe Controller
 node ace make:controller Posts -r
 
 # Exibe o status das migrations
@@ -47,4 +47,10 @@ node ace migration:status
 ```bash
 # Exibe a lista de rotas
 node ace list:routes
+
+# Cria um novo Controller de autenticação
+node ace make:controller Auth -r
 ```
+
+
+
