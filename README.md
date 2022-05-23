@@ -21,7 +21,9 @@ npm run dev
 npm run build
 npm run start
 ```
+
 ---
+
 ## Comandos Úteis
 
 ```bash
@@ -43,14 +45,19 @@ node ace make:controller Posts -r
 # Exibe o status das migrations
 node ace migration:status
 ```
+
 ![node ace migration:status](./assets/migration_status.png)
+
 ```bash
 # Exibe a lista de rotas
 node ace list:routes
 
 # Cria um novo Controller de autenticação
 node ace make:controller Auth -r
+
+# Cria um seeder de primeiro usuário
+node ace make:seeder FirstUser
+
+#  Executas as seeders registradas
+node ace db:seed
 ```
-
-
-
