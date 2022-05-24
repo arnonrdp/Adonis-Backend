@@ -11,7 +11,8 @@ export default class AuthController {
     return token
   }
 
-  public async destroy({ auth }: HttpContextContract) {
+  public async destroy({ response, auth }: HttpContextContract) {
     await auth.logout()
+    return response.send('You are logged out')
   }
 }
