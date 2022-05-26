@@ -12,15 +12,15 @@
   "eslintConfig": {
     "extends": [
       "plugin:adonis/typescriptApp",
-      "prettier"
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
     ],
     "plugins": [
       "prettier"
     ],
     "rules": {
-      "prettier/prettier": [
-        "error"
-      ]
+      "prettier/prettier": "error",
+      "no-console": "error"
     }
   },
   "eslintIgnore": [
@@ -34,7 +34,7 @@
     "quoteProps": "consistent",
     "bracketSpacing": true,
     "arrowParens": "always",
-    "printWidth": 100
+    "printWidth": 120
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.6.2",
