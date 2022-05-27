@@ -60,4 +60,7 @@ node ace make:seeder FirstUser
 
 #  Executas as seeders registradas
 node ace db:seed
+
+# Cria um Validator para validar os dados de Post
+node ace make:validator Post
 ```
