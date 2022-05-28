@@ -39,5 +39,9 @@ export class StoreValidator {
    * }
    *
    */
-  public messages = {}
+  public messages = {
+    'title.unique': 'Title must be unique',
+    'required': 'Este campo é obrigatório',
+    'string': 'Este campo deve ser uma string',
+  }
 }
