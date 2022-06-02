@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon'
-import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, BelongsTo, belongsTo, CherryPick, column } from '@ioc:Adonis/Lucid/Orm'
 import User from 'App/Models/User'
 
 export default class Post extends BaseModel {
@@ -27,4 +27,19 @@ export default class Post extends BaseModel {
     serialize: (value: DateTime) => value.toFormat('dd/MM/yyyy - HH:mm'),
   })
   public updatedAt: DateTime
+
+  public serialize(cherryPick?: CherryPick) {
+    return {
+      ...this.serializeAttributes(cherryPick?.fields, false),
+      ...this.serializeComputed(cherryPick?.fields),
+      ...this.serializeRelations(
+        {
+          author: {
+            fields: ['id', 'email', 'firstName'],
+          },
+        },
+        false
+      ),
+    }
+  }
 }
